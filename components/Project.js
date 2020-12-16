@@ -1,13 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import Image from 'next/image'
 import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
+  console.log(image)
   return (
     <Wrapper>
-      {/* {image && (
-        <Image fluid={image.childImageSharp.fluid} className='project-img' />
-      )} */}
+      {image && (
+        <div className='project-img'>
+          <Image
+            src={image}
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center center'
+          />
+        </div>
+      )}
       <div className='project-info'>
         <span className='project-number'>0{index + 1}.</span>
         <h3>{title || 'default title'}</h3>
@@ -33,25 +42,29 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
 const Wrapper = styled.article`
   display: grid;
   margin-bottom: 4rem;
+  position: relative;
 
   .project-img {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
     height: 19rem;
     z-index: 1;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+      opacity: 0.85;
+      transition: var(--transition);
+    }
   }
-  .project-img::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
-    opacity: 0.85;
-    transition: var(--transition);
-  }
-  .project:hover .project-img::after {
+
+  :hover .project-img::after {
     opacity: 0;
   }
   .project-info {
