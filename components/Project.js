@@ -9,11 +9,24 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
     <Wrapper>
       {image && (
         <div className='project-img'>
-          <Image
+          {/* The Image element is not supported yet on Netlify */}
+          {/* <Image
             src={image}
             layout='fill'
             objectFit='cover'
             objectPosition='center center'
+          /> */}
+          <img
+            src={image}
+            alt=''
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'top center',
+              maxWidth: '100%',
+              maxHeight: '100%',
+              minHeight: '100%',
+              minWidth: '100%',
+            }}
           />
         </div>
       )}
