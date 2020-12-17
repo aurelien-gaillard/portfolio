@@ -123,9 +123,9 @@ const Wrapper = styled.nav`
   }
 
   svg {
-    width: 200px;
-    fill: none;
     &.logo {
+      width: 200px;
+      fill: none;
       path:nth-child(-n + 8) {
         fill: var(--clr-grey-1);
         stroke: var(--clr-grey-1);
