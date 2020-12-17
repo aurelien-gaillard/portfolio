@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
-  console.log(image)
   return (
     <Wrapper>
       {image && (
