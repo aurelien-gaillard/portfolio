@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
@@ -40,10 +40,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className='project-links'>
-          <a href={github}>
+          <a href={github} target='_blank'>
             <FaGithubSquare className='project-icon' />
           </a>
-          <a href={url}>
+          <a href={url} target='_blank'>
             <FaShareSquare className='project-icon' />
           </a>
         </div>
