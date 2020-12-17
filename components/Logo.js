@@ -8,8 +8,8 @@ const Logo = () => {
   return (
     <svg
       className='logo'
-      width='920'
-      height='112'
+      width='200'
+      height='25'
       viewBox='0 0 920 112'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
