@@ -103,8 +103,7 @@ const Wrapper = styled.article`
   .project-stack {
     margin-bottom: 1rem;
   }
-  .project-stack span,
-  .about-stack span {
+  .project-stack span {
     display: inline-block;
     background: var(--clr-grey-9);
     color: var(--clr-grey-5);
@@ -114,9 +113,6 @@ const Wrapper = styled.article`
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.85rem;
-  }
-  .about-stack span {
-    margin-top: 0.5rem;
   }
   .project-icon {
     color: var(--clr-primary-5);

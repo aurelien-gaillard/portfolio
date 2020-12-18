@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Project from '../components/Project'
+import Title from '../components/Title'
 import { projects } from '../lib/projects_data'
 
 const Projects = () => {
   return (
     <Wrapper className='section projects'>
+      <Title title='My projects' />
       <div className='section-center projects-center'>
         {projects.map((project, index) => {
           return <Project key={project.id} index={index} {...project} />

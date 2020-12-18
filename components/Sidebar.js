@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import { FaTimes } from 'react-icons/fa'
 const Sidebar = ({ isOpen, toggleSidebar }) => {
-  console.log(isOpen)
   return (
     <Wrapper>
       <aside className={`sidebar ${isOpen ? 'show-sidebar' : ''} `}>
