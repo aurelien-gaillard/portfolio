@@ -5,7 +5,7 @@ import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
-    <Wrapper>
+    <Wrapper className='project'>
       {image && (
         <div className='project-img'>
           {/* The Image element is not supported yet on Netlify */}
@@ -153,7 +153,7 @@ const Wrapper = styled.article`
       grid-column: 5 /12;
       grid-row: 1 / 1;
     }
-    .project:nth-of-type(even) .project-img {
+    /* .project:nth-of-type(even) .project-img {
       grid-column: 5 / -1;
       grid-row: 1 / 1;
     }
@@ -161,7 +161,7 @@ const Wrapper = styled.article`
       grid-column: 2 / span 7;
       grid-row: 1 / 1;
       text-align: left;
-    }
+    } */
   }
 `
 
