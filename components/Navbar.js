@@ -133,11 +133,10 @@ const Wrapper = styled.nav`
         stroke: var(--clr-grey-1);
       }
       path:nth-child(n + 9) {
-        //animation: ${fill} 0.7s ease forwards 2.5s;
         stroke: var(--clr-primary-5);
         stroke-dasharray: 600;
         stroke-dashoffset: 600;
-        animation: ${lineAnim} 4s ease forwards, ${fill} 1.7s ease forwards 2s;
+        animation: ${lineAnim} 3s ease forwards, ${fill} 1s ease forwards 1.7s;
       }
     }
   }

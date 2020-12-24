@@ -63,7 +63,7 @@ const Wrapper = styled.article`
     z-index: 1;
     position: relative;
 
-    &::after {
+    /* &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -73,12 +73,12 @@ const Wrapper = styled.article`
       background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
       opacity: 0.85;
       transition: var(--transition);
-    }
+    } */
   }
 
-  :hover .project-img::after {
+  /* :hover .project-img::after {
     opacity: 0;
-  }
+  } */
   .project-info {
     background: var(--clr-white);
     padding: 1rem 2rem;
