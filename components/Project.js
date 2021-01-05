@@ -20,7 +20,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
             alt=''
             style={{
               objectFit: 'cover',
-              objectPosition: 'top center',
+              objectPosition: 'top left',
               maxWidth: '100%',
               maxHeight: '100%',
               minHeight: '100%',

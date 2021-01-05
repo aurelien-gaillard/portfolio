@@ -10,14 +10,28 @@ const about = () => {
   return (
     <Wrapper className='about-page'>
       <div className='section-center about-center'>
-        {/* <Image fluid={image.childImageSharp.fluid} className='about-img' /> */}
+        <div className='about-img'>
+          <img
+            src='profile_pic.png'
+            alt='profile picture'
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center left',
+              maxWidth: '100%',
+              maxHeight: '100%',
+              minHeight: '100%',
+              minWidth: '100%',
+            }}
+          />
+        </div>
+
         <article className='about-text'>
           <Title title='About' />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            repellendus illum numquam neque eligendi vel accusamus aut eos atque
-            dolore qui perferendis excepturi natus, commodi officiis
-            consequuntur ipsam soluta. Fugit.
+            After a life of challenging work in automotive industry, I decided
+            to embrace a new career as a Web developer. Passionate about coding,
+            I work hard to reach the state of the art. I am proactive, focused
+            on quality code and customer satisfaction. I am based in Prague.
           </p>
           <div className='about-stack'>
             {stack.map((item) => {
@@ -36,6 +50,9 @@ const Wrapper = styled.section`
   .about-img {
     margin-bottom: 2rem;
     height: 25rem;
+    img {
+      border-radius: 10% 30% 40% 20%;
+    }
   }
   .about-text .section-title {
     margin-bottom: 2rem;
