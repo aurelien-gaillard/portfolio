@@ -19,18 +19,6 @@ const Projects = () => {
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
-
-  @media screen and (min-width: 992px) {
-    .project:nth-of-type(even) .project-img {
-      grid-column: 5 / -1;
-      grid-row: 1 / 1;
-    }
-    .project:nth-of-type(even) .project-info {
-      grid-column: 2 / span 7;
-      grid-row: 1 / 1;
-      text-align: left;
-    }
-  }
 `
 
 export default Projects

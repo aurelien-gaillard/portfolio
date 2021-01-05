@@ -5,6 +5,7 @@ import Title from '../components/Title'
 const stack = [
   { id: 1, title: 'React' },
   { id: 2, title: 'Next.js' },
+  { id: 3, title: 'styled-components' },
 ]
 const about = () => {
   return (
