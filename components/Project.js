@@ -97,7 +97,7 @@ const Wrapper = styled.article`
     font-size: 1.5rem;
   }
   .project-desc {
-    word-spacing: 15px;
+    word-spacing: 6px;
     color: var(--clr-grey-3);
   }
   .project-stack {
